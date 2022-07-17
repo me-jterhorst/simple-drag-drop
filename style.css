@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  gap: 1rem;
+}
+
+.dropZone {
+  width: 8.75rem;
+  min-height: 8.75rem;
+
+  padding: 0.5rem;
+
+  list-style: none;
+
+  border-style: dashed;
+  border-width: 0.25rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.dropZone[data-drag-active='true'] {
+  opacity: 0.5;
+}
+
+.dropZone:nth-child(even) {
+  border-color: steelblue;
+}
+.dropZone:nth-child(odd) {
+  border-color: rebeccapurple;
+}
+
+.dropItem {
+  width: 2rem;
+  height: 2rem;
+  background-color: salmon;
+}
